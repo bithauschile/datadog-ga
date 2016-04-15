@@ -48,7 +48,7 @@ If you are ready with this, go directly to Step 3: Installing the check.
   2. Use pip to install the Google API client for Python: `pip install --upgrade google-api-python-client`
 3. Install the check:
   - Copy ga.yaml to /etc/dd-agent/conf.d/
-  - Copy ga.py to /etc/dd-agent/
+  - Copy ga.py to /etc/dd-agent/checks.d/
   - Copy the api key json file to the server in a directory the agent can access *(ie: /etc/dd-agent/conf.d/)*
 4. Configure by adding the account information and the properties (views) you want to integrate in `/etc/dd-agent/conf.d/ga.yaml`. 
   - In the following example, the query divides the pageviews in 3 dimensions (country, city, device). For more information about available dimensions go to [this page](https://developers.google.com/analytics/devguides/reporting/realtime/dimsmets/).
