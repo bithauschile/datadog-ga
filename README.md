@@ -84,3 +84,5 @@ If you are ready with this, go directly to Step 3: Installing the check.
 - [Datadog - Writing an Agent Check](http://docs.datadoghq.com/guides/agent_checks/)
 
 
+##Licence
+The code is licensed under the MIT License.
