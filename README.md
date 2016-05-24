@@ -44,8 +44,7 @@ If you are ready with this, go directly to Step 3: Installing the check.
 
 1. Clone or download from [https://github.com/bithauschile/datadog-ga](https://github.com/bithauschile/datadog-ga)
 2. Install python libraries
-  1. Install pip: `apt-get install python-pip`
-  2. Use pip to install the Google API client for Python: `pip install --upgrade google-api-python-client`
+  1. Use pip to install the Google API client for Python: `/opt/datadog-agent/embedded/pip install --upgrade google-api-python-client`
 3. Install the check:
   - Copy ga.yaml to /etc/dd-agent/conf.d/
   - Copy ga.py to /etc/dd-agent/checks.d/
