@@ -16,7 +16,9 @@ init_config:
 #
 #
 # Example
-#
+
+#instances:
+
 #   - profile: ga:12345678
 #     tags:
 #      - env:production
