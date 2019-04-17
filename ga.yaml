@@ -15,7 +15,6 @@ init_config:
 #
 #
 # Example
-#
 instances:
 #   - profile: ga:12345678
 #     min_collection_interval: 55
