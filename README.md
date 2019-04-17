@@ -46,10 +46,10 @@ If you are ready with this, go directly to Step 3: Installing the check.
 2. Install python libraries
   1. Use pip to install the Google API client for Python: `/opt/datadog-agent/embedded/bin/pip install --upgrade google-api-python-client`
 3. Install the check:
-  - Copy ga.yaml to /etc/dd-agent/conf.d/
-  - Copy ga.py to /etc/dd-agent/checks.d/
-  - Copy the api key json file to the server in a directory the agent can access *(ie: /etc/dd-agent/conf.d/)*
-4. Configure by adding the account information and the properties (views) you want to integrate in `/etc/dd-agent/conf.d/ga.yaml`. 
+  - Copy ga.yaml to /etc/datadog-agent/conf.d/
+  - Copy ga.py to /etc/datadog-agent/checks.d/
+  - Copy the api key json file to the server in a directory the agent can access *(ie: /etc/datadog-agent/conf.d/)*
+4. Configure by adding the account information and the properties (views) you want to integrate in `/etc/datadog-agent/conf.d/ga.yaml`. 
   - In the following example, the query divides the pageviews in 3 dimensions (country, city, device). For more information about available dimensions go to [this page](https://developers.google.com/analytics/devguides/reporting/realtime/dimsmets/).
   - Be carefull with the *min_collection_interval* paramter. Google Analytics generate a by-minute result in the Real Time response with no timestamp. The only way to correlate Analytics data with the other metrics is running every 60 seconds aprox.
 
@@ -57,7 +57,7 @@ If you are ready with this, go directly to Step 3: Installing the check.
   init_config:
     min_collection_interval: 55
     service_account_email: my-svc-account@my-project.12345.iam.gserviceaccount.com
-    key_file_location: /opt/datadog-agent/etc/conf.d/key.json
+    key_file_location: /etc/datadog-agent/conf.d/key.json
 
   instances:
 
