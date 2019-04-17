@@ -6,9 +6,8 @@
 # - Be sure Datadog Agent can read key file.
 #
 init_config:
-    min_collection_interval: 55
     service_account_email: example@my-project.iam.gserviceaccount.com
-    key_file_location: /opt/datadog-agent/etc/conf.d/key.json
+    key_file_location: /etc/datadog-agent/conf.d/key.json
     
 # - Create as many instances as google profiles will reported to Datadog
 # - Each metric will be tagged with: profile + tags + dimensions
@@ -17,7 +16,9 @@ init_config:
 #
 # Example
 #
+instances:
 #   - profile: ga:12345678
+#     min_collection_interval: 55
 #     tags:
 #      - env:production
 #     pageview_dimensions:
